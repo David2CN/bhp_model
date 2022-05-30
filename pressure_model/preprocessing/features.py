@@ -1,17 +1,17 @@
-from typing import List
+from typing import Dict, List
 
 import pandas as pd
 from sklearn.base import BaseEstimator, TransformerMixin
 
 
 class SImputer(BaseEstimator, TransformerMixin):
-    """ A simple imputer for numerical variables."""
+    """A simple imputer for numerical variables."""
 
     def __init__(self, variables: List[str], strategy: str = "median"):
 
         self.variables = variables
         self.strategy = strategy
-        self.fill_value = {}
+        self.fill_value: Dict[str, str] = {}
 
     def fit(self, X: pd.DataFrame, y: pd.Series = None):
 
@@ -28,4 +28,3 @@ class SImputer(BaseEstimator, TransformerMixin):
         for col in self.variables:
             df[col] = df[col].fillna(self.fill_value[col])
         return df
-

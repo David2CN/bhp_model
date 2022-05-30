@@ -15,7 +15,6 @@ DATASET_DIR = PACKAGE_ROOT / "data"
 TRAINED_MODEL_DIR = PACKAGE_ROOT / "trained"
 
 
-
 class AppConfig(BaseModel):
     """
     Application-level config.
@@ -41,13 +40,11 @@ class ModelConfig(BaseModel):
     num_imputation_strategy: str
 
 
-
 class Config(BaseModel):
     """Master config object."""
 
     app_config: AppConfig
     model_config: ModelConfig
-
 
 
 def find_config_file() -> Path:
@@ -85,4 +82,3 @@ def create_and_validate_config(parsed_config: YAML = None) -> Config:
 
 
 config = create_and_validate_config()
-

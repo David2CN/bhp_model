@@ -50,5 +50,3 @@ def remove_old_pipelines(*, files_to_keep: t.List[str]) -> None:
     for model_file in TRAINED_MODEL_DIR.iterdir():
         if model_file.name not in do_not_delete:
             model_file.unlink()
-
-

@@ -1,4 +1,3 @@
-
 def test_features(sample_input_data):
 
     assert sample_input_data["AVG_ANNULUS_PRESS"].iat[0] == 0.0
