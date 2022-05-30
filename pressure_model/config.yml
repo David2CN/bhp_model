@@ -1,0 +1,32 @@
+# Package Overview
+package_name: pressure_model
+
+# Data Files
+training_data_file: train.csv
+test_data_file: test.csv
+
+# Variables
+# The variable we are attempting to predict (sale price)
+target: AVG_DOWNHOLE_PRESSURE
+
+pipeline_name: pressure_model
+pipeline_save_file: pressure_model_output_v
+
+
+features:
+  - AVG_ANNULUS_PRESS
+  - AVG_WHT_P
+  - DP_CHOKE_SIZE
+  - DAYS_1STPRD
+
+# set train/test split
+test_size: 0.2
+
+# to set the random seed
+random_state: 42
+
+features_with_na:
+  - AVG_ANNULUS_PRESS
+
+num_imputation_strategy: median
+

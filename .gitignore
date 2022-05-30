@@ -1,0 +1,9 @@
+.idea
+.pytest_cache/
+pressure_model/__pycache__
+pressure_model/config/__pycache__
+pressure_model/preprocessing/__pycache__
+tests/__pycache__
+
+
+
