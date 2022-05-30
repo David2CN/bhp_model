@@ -5,7 +5,7 @@ from setuptools import find_packages, setup
 # Package meta-data.
 NAME = 'bhp-model'
 DESCRIPTION = "Example regression model package from Train In Data."
-URL = "https://github.com/David2CN/bhp_model/tree/main/"
+URL = "https://github.com/David2CN/bhp_model"
 EMAIL = "onyealidavidcn@gmail.com"
 AUTHOR = "David Onyeali"
 REQUIRES_PYTHON = ">=3.6.0"
