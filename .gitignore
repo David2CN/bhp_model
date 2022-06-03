@@ -4,6 +4,8 @@ pressure_model/__pycache__
 pressure_model/config/__pycache__
 pressure_model/preprocessing/__pycache__
 tests/__pycache__
+dist/
+bhp_model.egg-info/
 
 
 
