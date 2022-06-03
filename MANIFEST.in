@@ -1,11 +1,12 @@
 include *.txt
 include *.md
 include *.pkl
-recursive-include ./regression_model/*
+include *.csv
+recursive-include ./pressure_model/*
 
-include pressure_model/datasets/train.csv
-include pressure_model/datasets/test.csv
-include pressure_model/trained_models/*.pkl
+include pressure_model/data/train.csv
+include pressure_model/data/test.csv
+include pressure_model/trained/*.pkl
 include pressure_model/VERSION
 include pressure_model/config.yml
 
