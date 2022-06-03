@@ -4,7 +4,7 @@ from setuptools import find_packages, setup
 
 # Package meta-data.
 NAME = 'pressure_model'
-DESCRIPTION = "Example regression model package from Train In Data."
+DESCRIPTION = "A package for predicting downhole pressure in oil wells."
 URL = "https://github.com/David2CN/bhp_model"
 EMAIL = "onyealidavidcn@gmail.com"
 AUTHOR = "David Onyeali"

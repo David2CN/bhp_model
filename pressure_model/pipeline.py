@@ -1,4 +1,4 @@
-from sklearn.ensemble import RandomForestRegressor
+from sklearn.svm import SVR
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import MinMaxScaler
 
@@ -15,6 +15,12 @@ pressure_pipe = Pipeline(
             ),
         ),
         ("scaler", MinMaxScaler()),
-        ("model", RandomForestRegressor(random_state=config.model_config.random_state)),
+
+        ("model", SVR(
+            C=config.model_config.C,
+            kernel=config.model_config.kernel,
+            degree=config.model_config.degree,
+            epsilon=config.model_config.epsilon
+        )),
     ]
 )

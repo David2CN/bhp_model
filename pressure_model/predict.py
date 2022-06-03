@@ -26,10 +26,12 @@ def make_prediction(
         predictions = _pressure_pipe.predict(
             X=validated_data[config.model_config.features]
         )
+
         results = {
-            "predictions": [np.exp(pred) for pred in predictions],  # type: ignore
+            "predictions": [pred for pred in predictions],  # type: ignore
             "version": _version,
             "errors": errors,
         }
 
     return results
+

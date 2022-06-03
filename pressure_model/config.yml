@@ -30,3 +30,9 @@ features_with_na:
 
 num_imputation_strategy: median
 
+# model hyperparameters
+C: 884
+kernel: rbf
+degree: 4
+epsilon: 0.3166321651551992
+

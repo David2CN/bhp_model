@@ -38,6 +38,10 @@ class ModelConfig(BaseModel):
     random_state: int
     features_with_na: List[str]
     num_imputation_strategy: str
+    C: float
+    epsilon: float
+    degree: int
+    kernel: str
 
 
 class Config(BaseModel):
