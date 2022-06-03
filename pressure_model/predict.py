@@ -1,4 +1,5 @@
 import typing as t
+
 import pandas as pd
 
 from pressure_model import __version__ as _version
@@ -32,4 +33,3 @@ def make_prediction(
         }
 
     return results
-
