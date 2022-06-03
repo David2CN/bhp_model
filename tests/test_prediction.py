@@ -21,4 +21,4 @@ def test_predictions(sample_input_data):
     )
     assert result.get("errors") is None
     assert len(predictions) == expected_no_predictions
-    assert math.isclose(predictions[16], expected_first_prediction_value, abs_tol=10)
+    assert math.isclose(predictions[16], expected_first_prediction_value, abs_tol=50)
