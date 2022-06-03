@@ -3,7 +3,7 @@ from pathlib import Path
 from setuptools import find_packages, setup
 
 # Package meta-data.
-NAME = 'pressure-model'
+NAME = 'pressure_model'
 DESCRIPTION = "Example regression model package from Train In Data."
 URL = "https://github.com/David2CN/bhp_model"
 EMAIL = "onyealidavidcn@gmail.com"
